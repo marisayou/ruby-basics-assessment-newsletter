@@ -42,6 +42,7 @@ def print_recipients
   calculate_recipients.each do |email|
     email_str += email + ", "
   end
+  # Remove ", " from end of string
   puts email_str.chop.chop + "\n\n"
 end
 
